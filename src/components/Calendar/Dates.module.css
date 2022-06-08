@@ -1,9 +1,12 @@
 .dateWeek {
   display: grid;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(7, 30px);
   grid-template-rows: repeat(5, 15px);
   text-align: center;
   font-size: 14px;
+  height: max-content;
 }
 
 .dateWeek :first-child {
