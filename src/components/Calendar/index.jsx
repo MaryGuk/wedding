@@ -1,12 +1,10 @@
-import CalendarHeader from "./CalendarHeader";
 import Dates from "./Dates";
 import s from "./index.module.css";
 
-function Calendar() {
+function Calendar({ weddingDate }) {
   return (
-    <div>
-      <CalendarHeader />
-      <Dates />
+    <div className={s.calendar}>
+      <Dates weddingDate={weddingDate} />
     </div>
   );
 }
