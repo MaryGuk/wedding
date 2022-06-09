@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import s from "./App.module.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <div className={s.pageWrapper}>
+          {Array.from({ length: 12 }).map(() => <App/>)}
+      </div>
   </React.StrictMode>
 );
 

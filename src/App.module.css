@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 700px;
+    height: 750px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: MyCustomFont;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 12px;
+    margin: 2px;
+}
+
+.pageWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    width: fit-content;
+}

@@ -1,14 +1,28 @@
-.dateWeek {
+.gridContainer {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(7, 30px);
-  grid-template-rows: repeat(5, 15px);
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(5, auto);
   text-align: center;
-  font-size: 14px;
   height: max-content;
+  width: 100%;
 }
 
-.dateWeek :first-child {
-  grid-column: 3;
+.headerItem {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.dateItem {
+  width: 96px;
+  position: relative;
+}
+
+.heart {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  transform: rotate(8deg);
 }

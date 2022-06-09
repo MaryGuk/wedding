@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import s from "./App.module.css";
 import Header from "./components/Header";
 import Calendar from "./components/Calendar";
