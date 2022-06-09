@@ -1,7 +1,7 @@
 import s from './Dates.module.css';
 import clsx from 'clsx';
 
-function Dates() {
+function Dates({ weddingDate }) {
   return (
     <div className={clsx(s.gridContainer)}>
       {[
@@ -9,7 +9,7 @@ function Dates() {
         ...[
           ...Array.from({ length: 2 }).map(() => ''),
           ...Array.from({ length: 30 }).map((_, idx) => (String(idx + 1)))
-        ].map((value) => (<div className={s.dateItem}>{Number(value) === 26 ?
+        ].map((value) => (<div className={s.dateItem}>{weddingDate && Number(value) === weddingDate ?
             (<>
               <div>{value}</div>
               <div className={s.heart}>

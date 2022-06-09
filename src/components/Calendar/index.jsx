@@ -1,10 +1,10 @@
 import Dates from "./Dates";
 import s from "./index.module.css";
 
-function Calendar() {
+function Calendar({ weddingDate }) {
   return (
     <div className={s.calendar}>
-      <Dates />
+      <Dates weddingDate={weddingDate} />
     </div>
   );
 }

@@ -8,9 +8,7 @@ import s from "./App.module.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <div className={s.pageWrapper}>
-          {Array.from({ length: 12 }).map(() => <App/>)}
-      </div>
+    <App />
   </React.StrictMode>
 );
 
